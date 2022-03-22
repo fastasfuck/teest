@@ -1,2 +1,11 @@
-#bin/bash
-hello from github
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
